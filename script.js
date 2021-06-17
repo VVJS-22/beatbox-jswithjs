@@ -44,6 +44,7 @@ triggerBeat = (event) => {
         let keyPress = beats[keyCode];
         keyPress.beat.play();
         keyPress.button.select();
+        setTimeout(()=> {keyPress.button.deselect()},100)
     }
 
 }
@@ -57,7 +58,18 @@ myBeat.forEach(beat => beat.addEventListener('click', () => {
     let keyPress = beats[beat.id];
         keyPress.beat.play();
         keyPress.button.select();
+        setTimeout(()=> {keyPress.button.deselect()},100)
 }));
 
+const end = (event) => {
+    let keyCode = event.keyCode;
+    if (keyCode in beats){
+        let keyPress = beats[keyCode];
+        keyPress.button.deselect();
+    }
+
+}
+
+// document.addEventListener('keyup', end);
 
 document.addEventListener('keydown', triggerBeat)

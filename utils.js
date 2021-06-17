@@ -17,7 +17,7 @@ class Button {
         this.keyCode = keyCode;
         this.element = document.getElementById(keyCode);
         this.setButtonColorInHTML();
-        this.createTransitionEndListener();
+        // this.createTransitionEndListener();
     }
 
     setButtonColorInHTML = () => {
