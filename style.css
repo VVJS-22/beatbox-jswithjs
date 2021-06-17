@@ -33,16 +33,11 @@ body {
   height: 25%;
   flex-basis: 29%;
   display: flex;
-  margin: 0.5rem;
+  margin: 0.2rem;
   align-items: center;
   cursor: pointer;
 }
 
-@media screen and (max-width : 400px) {
-  .beat {
-    margin: 0.2rem;
-  }
-}
 
 .beat .button {
   width: 100%;
