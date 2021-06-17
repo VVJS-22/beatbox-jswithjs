@@ -38,7 +38,7 @@ body {
   cursor: pointer;
 }
 
-@media screen and (max-width : 350px) {
+@media screen and (max-width : 400px) {
   .beat {
     margin: 0.2rem;
   }
